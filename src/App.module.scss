@@ -8,6 +8,7 @@
     width: 90vw;
     height: 80vh;
     background-color: $bg-main;
+    font-size: 1.4rem;
     .chart{
         @include card;
         color: $texto;
