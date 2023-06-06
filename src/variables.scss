@@ -1,0 +1,30 @@
+//backgrounds
+$bg-container:#01040f;
+$bg-main: #091025;
+$bg-card: #080f2b;
+
+//borders
+$border-color:#b1afc6;
+$border-hover: #0d0633;
+//colors
+$texto: #f4f4f4;
+$input: #0d1f59;
+
+//buttons
+$button-color:#2065a1;
+$button-hover:#1b1d85;
+$button-delete-hover:#a8a3a3;
+$button-disabled: #535353;
+
+// fonts
+@font-face {
+    font-family: 'Circular-std';
+    src: url('../fonts/circular-std-medium-500.ttf');
+}
+
+//mixins
+@mixin card{
+    border-radius: 1.75rem;
+    border: 1px $border-color solid;
+    padding: 2%;
+}

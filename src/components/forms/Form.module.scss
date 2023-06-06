@@ -1,0 +1,46 @@
+@import '../../variables';
+.container{
+    @include card;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-container;
+    color: $texto;
+    .title{
+        align-self: center;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100%;
+        justify-content: space-around;
+        font-size: 1.4rem;
+        .label{
+            padding-top: .5rem;
+            .input{
+                margin-top: 2rem;
+                padding:1rem;
+                color: $input;
+            }
+        }
+        .button{
+            padding: .5rem;
+            border-radius: .475rem;
+            justify-self: end;
+            cursor: pointer;
+            border: none;
+            color:$texto;
+            background-color: $button-color;
+            transition: background-color .3s ease;
+            &:hover{
+                background-color: $button-hover;
+            }
+            &:disabled {
+                background-color: $button-disabled;
+                cursor: default;
+            }
+        }
+    }
+}

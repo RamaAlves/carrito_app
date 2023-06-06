@@ -1,0 +1,46 @@
+@import 'variables';
+.main{
+    @include card;
+    background-image: url('/images/mesh-911.png');
+    background-size: cover;
+    display:flex;
+    gap:4rem;
+    width: 90vw;
+    height: 80vh;
+    background-color: $bg-main;
+    .chart{
+        @include card;
+        color: $texto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:2rem;
+        background-color: $bg-container;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                padding-left: 2%;
+            }
+            .total{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                font-size: 2rem;
+                padding-right: 2rem;
+                .cash{
+                    min-width: 200px ;
+                }
+            }
+        }
+        .containerItems{
+            padding:1rem;
+            display: flex;
+            justify-content: start;
+            gap:2%;
+            overflow: auto;
+            flex-wrap: wrap;
+        }
+    }
+}

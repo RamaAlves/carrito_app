@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600;800&display=swap");
+@font-face {
+  font-family: "Circular-std";
+  src: url("../fonts/circular-std-medium-500.ttf");
+}
+:root {
+  font-family: "Merriweather Sans", sans-serif;
+  /*  Inter, */
+  /* system-ui */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+html body {
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: #01040f;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=index.css.map */

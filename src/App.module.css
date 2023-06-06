@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Circular-std";
+  src: url("../fonts/circular-std-medium-500.ttf");
+}
+.main {
+  background-image: url("/images/mesh-911.png");
+  background-size: cover;
+  border-radius: 1.75rem;
+  border: 1px #e3e3e3 solid;
+  padding: 2%;
+  display: flex;
+  gap: 4rem;
+  width: 90vw;
+  height: 80vh;
+  background-color: #091025;
+}
+.main .chart {
+  border-radius: 1.75rem;
+  border: 1px #e3e3e3 solid;
+  padding: 2%;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  background-color: #01040f;
+}
+.main .chart .total {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 2rem;
+  padding-right: 2rem;
+}
+.main .chart .containerItems {
+  /* @include card; */
+  /* max-width: 100%; */
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+  overflow: auto;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=App.module.css.map */
