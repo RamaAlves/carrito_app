@@ -4,7 +4,7 @@
 }
 .container {
   border-radius: 1.75rem;
-  border: 1px #e3e3e3 solid;
+  border: 1px #b1afc6 solid;
   padding: 2%;
   width: 25%;
   height: 100%;
@@ -13,16 +13,15 @@
   background-color: #01040f;
   color: #f4f4f4;
 }
+.container .title {
+  align-self: center;
+}
 .container .form {
-  /* @include card; */
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   justify-content: space-around;
-  /* border-radius: 1.75rem;
-  border: 1px $border-color solid;
-  padding: 2%; */
   font-size: 1.4rem;
 }
 .container .form .label {
@@ -31,7 +30,7 @@
 .container .form .label .input {
   margin-top: 2rem;
   padding: 1rem;
-  color: #031142;
+  color: #0d1f59;
 }
 .container .form .button {
   padding: 0.5rem;

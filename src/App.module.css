@@ -3,11 +3,11 @@
   src: url("../fonts/circular-std-medium-500.ttf");
 }
 .main {
+  border-radius: 1.75rem;
+  border: 1px #b1afc6 solid;
+  padding: 2%;
   background-image: url("/images/mesh-911.png");
   background-size: cover;
-  border-radius: 1.75rem;
-  border: 1px #e3e3e3 solid;
-  padding: 2%;
   display: flex;
   gap: 4rem;
   width: 90vw;
@@ -16,7 +16,7 @@
 }
 .main .chart {
   border-radius: 1.75rem;
-  border: 1px #e3e3e3 solid;
+  border: 1px #b1afc6 solid;
   padding: 2%;
   color: #f4f4f4;
   display: flex;
@@ -25,16 +25,25 @@
   gap: 2rem;
   background-color: #01040f;
 }
-.main .chart .total {
+.main .chart .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .chart .container .title {
+  padding-left: 2%;
+}
+.main .chart .container .total {
   display: flex;
   justify-content: end;
   align-items: center;
   font-size: 2rem;
   padding-right: 2rem;
 }
+.main .chart .container .total .cash {
+  min-width: 200px;
+}
 .main .chart .containerItems {
-  /* @include card; */
-  /* max-width: 100%; */
   padding: 1rem;
   display: flex;
   justify-content: start;
