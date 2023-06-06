@@ -15,7 +15,7 @@
   background-color: #091025;
   font-size: 1.4rem;
 }
-.main .chart {
+.main .cart {
   border-radius: 1.75rem;
   border: 1px #b1afc6 solid;
   padding: 2%;
@@ -26,26 +26,26 @@
   gap: 2rem;
   background-color: #01040f;
 }
-.main .chart .container {
+.main .cart .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main .chart .container .title {
+.main .cart .container .title {
   padding-left: 2%;
   font-size: 1.4rem;
 }
-.main .chart .container .total {
+.main .cart .container .total {
   display: flex;
   justify-content: end;
   align-items: center;
   font-size: 2rem;
   padding-right: 2rem;
 }
-.main .chart .container .total .cash {
+.main .cart .container .total .cash {
   min-width: 200px;
 }
-.main .chart .containerItems {
+.main .cart .containerItems {
   padding: 1rem;
   display: flex;
   justify-content: start;

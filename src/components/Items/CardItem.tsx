@@ -12,14 +12,14 @@ interface Item {
 
 type Props = {
   item: Item;
-  chart: Item[];
-  setChart: React.Dispatch<React.SetStateAction<Item[]>>;
+  cart: Item[];
+  setCart: React.Dispatch<React.SetStateAction<Item[]>>;
 };
 
 export const CardItem = (props: Props) => {
   const handleUpdateItem = (op: string) => {
     //itero por el array de items y los copio
-    let modifyChart = props.chart.map((item) => {
+    let modifyCart = props.cart.map((item) => {
       //modifico el item deseado
       if (item.id === props.item.id) {
         //actualizo la prop quantity del elemento
@@ -34,13 +34,13 @@ export const CardItem = (props: Props) => {
       return item;
     });
     //actualizo la lista de elementos
-    props.setChart(modifyChart);
+    props.setCart(modifyCart);
   };
   const handleDeleteItem = () => {
     //itero por el array de items y los copio
-    let modifyChart = props.chart.filter((item) => item.id != props.item.id);
+    let modifyCart = props.cart.filter((item) => item.id != props.item.id);
     //actualizo la lista de elementos
-    props.setChart(modifyChart);
+    props.setCart(modifyCart);
   };
   return (
     <div className={style.card}>

@@ -12,8 +12,8 @@ interface Item {
 }
 
 type Props = {
-  chart: Item[];
-  setChart: React.Dispatch<React.SetStateAction<Item[]>>;
+  cart: Item[];
+  setCart: React.Dispatch<React.SetStateAction<Item[]>>;
 };
 export const FormItem = (props: Props) => {
   const [product, setProduct] = useState("");
@@ -21,13 +21,13 @@ export const FormItem = (props: Props) => {
   const [price, setPrice] = useState(0);
   const handleNewItem = () => {
     // validar si el elemento a cargar no existe en el carrito
-    let itemExist = props.chart.filter(
+    let itemExist = props.cart.filter(
       (item) => item.price == price && item.product == product
     );
     // si el elemento no existe lo carga
     if (itemExist[0] == null) {
-      let newId = uuidv4(); /* chart.length + 1; //otra opcion de id*/
-      props.setChart((prevItems) => {
+      let newId = uuidv4(); /* cart.length + 1; //otra opcion de id*/
+      props.setCart((prevItems) => {
         return [
           ...prevItems,
           {
@@ -42,11 +42,11 @@ export const FormItem = (props: Props) => {
       });
     } else {
       //si ya existe suma 1 a la cantidad en el carrito
-      let otherItems = props.chart.filter(
+      let otherItems = props.cart.filter(
         (item) => item.price != price || item.product != product
       );
       itemExist[0].quantity++;
-      props.setChart([...otherItems, itemExist[0]]);
+      props.setCart([...otherItems, itemExist[0]]);
     }
     setProduct("");
     setDescription("");

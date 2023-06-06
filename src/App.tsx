@@ -14,17 +14,17 @@ interface Item {
 }
 
 function App() {
-  const [chart, setChart] = useState<Item[]>([]);
+  const [cart, setCart] = useState<Item[]>([]);
   let total: number = 0;
-  chart.forEach((item: Item) => {
+  cart.forEach((item: Item) => {
     total += item.price * item.quantity;
   });
 
   return (
     <>
       <main className={style.main}>
-        <FormItem chart={chart} setChart={setChart} />
-        <div className={style.chart}>
+        <FormItem cart={cart} setCart={setCart} />
+        <div className={style.cart}>
           <div className={style.container}>
             <h2 className={style.title}>Listado</h2>
             <div className={style.total}>
@@ -33,13 +33,13 @@ function App() {
             </div>
           </div>
           <div className={style.containerItems}>
-            {chart.map((element: Item) => {
+            {cart.map((element: Item) => {
               return (
                 <CardItem
                   key={element.id}
                   item={element}
-                  chart={chart}
-                  setChart={setChart}
+                  cart={cart}
+                  setCart={setCart}
                 />
               );
             })}
