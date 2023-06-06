@@ -9,6 +9,7 @@
     color: $texto;
     .title{
         align-self: center;
+        font-size: 1.4rem;
     }
     .form{
         display: flex;
@@ -19,8 +20,9 @@
         font-size: 1.4rem;
         .label{
             padding-top: .5rem;
+            font-size: 1rem;
             .input{
-                margin-top: 2rem;
+                margin-top: 1rem;
                 padding:1rem;
                 color: $input;
                 width: 100%;

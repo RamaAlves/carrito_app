@@ -15,6 +15,7 @@
 }
 .container .title {
   align-self: center;
+  font-size: 1.4rem;
 }
 .container .form {
   display: flex;
@@ -26,9 +27,10 @@
 }
 .container .form .label {
   padding-top: 0.5rem;
+  font-size: 1rem;
 }
 .container .form .label .input {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
   color: #0d1f59;
   width: 100%;

@@ -33,6 +33,7 @@
 }
 .main .chart .container .title {
   padding-left: 2%;
+  font-size: 1.4rem;
 }
 .main .chart .container .total {
   display: flex;
